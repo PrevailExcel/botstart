@@ -1,0 +1,39 @@
+{
+    "name": "prevailexcel/botstart",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "A single command to install Laravel, BotMan, and all the essentials. Start building in less than 3 minutes",
+    "keywords": [
+        "botman",
+        "botman studio",
+        "botman studio installer",
+        "botman studio laravel",
+        "laravel bot",
+        "botstart",
+        "botman php",
+        "bot framework",
+        "laravel cli"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chimeremeze Prevail Ejimadu",
+            "email": "prevailexcellent@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PrevailExcel\\BotManStudioInstaller\\": "src/"
+        },
+        "files": [
+            "src/helpers/botman.php"
+        ]
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "symfony/console": "^5.4 || ^6.0 || ^7.0"
+    },
+    "bin": [
+        "botstart"
+    ]
+}

@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+if (file_exists(__DIR__.'/../../autoload.php')) {
+    require __DIR__.'/../../autoload.php';
+} else {
+    require __DIR__.'/vendor/autoload.php';
+}
+
+use Symfony\Component\Console\Application;
+use PrevailExcel\BotManStudioInstaller\Commands\InstallCommand;
+
+$application = new Application('BotMan Studio Installer', '1.0');
+$application->add(new InstallCommand());
+$application->run();
