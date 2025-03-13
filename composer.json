@@ -1,6 +1,6 @@
 {
     "name": "prevailexcel/botstart",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "description": "A single command to install Laravel, BotMan, and all the essentials. Start building in less than 3 minutes",
     "keywords": [

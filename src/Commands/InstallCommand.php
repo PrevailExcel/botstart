@@ -157,7 +157,7 @@ class InstallCommand extends Command
     // Get the Laravel version from the project
     protected function getLaravelVersion(OutputInterface $output)
     {
-        exec('php artisan --version', $outputLines, $resultCode);
+        exec('php artisan --version --no-ansi', $outputLines, $resultCode);
 
         if ($resultCode !== 0 || empty($outputLines)) {
             $output->writeln("<error>Unable to detect Laravel version using artisan.</error>");
